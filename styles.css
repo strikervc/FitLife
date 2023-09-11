@@ -1,0 +1,83 @@
+:root {
+  --fit-green: #d0fd3e;
+  --light-gray: #505052;
+  --dark-gray: #1c1c1e;
+  --less-light-gray: #2c2c2e;
+  --almost-white: #faf8f7;
+  --off-white: #d9d9d9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--dark-gray);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  background-color: var(--less-light-gray);
+  min-width: 463px;
+}
+
+nav .navbar-left img {
+  width: 100px;
+}
+nav .navbar-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  color: var(--dark-grayish-blue);
+}
+
+.navbar-right ul li {
+  list-style: none;
+}
+
+/* .navbar-right ul li a:hover {
+  color: var(--soft-orange);
+} */
+
+/* .navbar-right ul li a {
+  text-decoration: none;
+  color: var(--very-light-pink);
+  border: 1px solid var(--white);
+  padding: 8px;
+  border-radius: 8px;
+} */
+
+nav .navbar-right .header--download-buttons-container {
+  display: flex;
+  gap: 2rem;
+}
+
+nav .navbar-right .header--download-buttons-container img {
+  width: 100px;
+}
+
+@media (max-width: 1279px) {
+    .navbar-right ul {
+        visibility: hidden;
+    }
+}
