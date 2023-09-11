@@ -20,6 +20,8 @@ html {
 
 body {
   background-color: var(--dark-gray);
+  color: var(--almost-white);
+  min-width: 463px;
 }
 
 nav {
@@ -75,6 +77,82 @@ nav .navbar-right .header--download-buttons-container {
 nav .navbar-right .header--download-buttons-container img {
   width: 100px;
 }
+
+.main-onboarding {
+    width: 100vw;
+}
+
+.main-onboarding .main-onboarding--container {
+    height: auto;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 3rem;
+    place-items: center;
+    padding: 4rem;
+
+}
+
+.main-onboarding .main-onboarding--container h3 {
+    font-weight: 600;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.main-onboarding .main-onboarding--container p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.main-onboarding .main-onboarding--container .main-onboarding--buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.main-onboarding .main-onboarding--container .main-onboarding--buttons .start-button{
+    padding: 1rem 2.2rem;
+    width: auto;
+    height: auto;
+    background-color: var(--fit-green);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
+.main-onboarding .main-onboarding--container .main-onboarding--buttons .watch-video-button{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0.85rem 1.5rem;
+    width: auto;
+    height: auto;
+    outline: 1px solid var(--fit-green);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.main-onboarding .main-onboarding--container .main-onboarding--buttons .watch-video-button img{
+    width: 1.5rem;
+}
+
+.main-onboarding .main-onboarding--container .green {
+    color: var(--fit-green);
+}
+
+.main-onboarding .main-onboarding--container .login-image {
+    width: 350px;
+}
+
 
 @media (max-width: 1279px) {
     .navbar-right ul {
