@@ -16,12 +16,12 @@
 html {
   font-size: 62.5%;
   font-family: "Inter", sans-serif;
+  min-width: 463px;
 }
 
 body {
   background-color: var(--dark-gray);
   color: var(--almost-white);
-  min-width: 463px;
 }
 
 nav {
@@ -57,18 +57,6 @@ nav .navbar-right {
   list-style: none;
 }
 
-/* .navbar-right ul li a:hover {
-  color: var(--soft-orange);
-} */
-
-/* .navbar-right ul li a {
-  text-decoration: none;
-  color: var(--very-light-pink);
-  border: 1px solid var(--white);
-  padding: 8px;
-  border-radius: 8px;
-} */
-
 nav .navbar-right .header--download-buttons-container {
   display: flex;
   gap: 2rem;
@@ -79,7 +67,7 @@ nav .navbar-right .header--download-buttons-container img {
 }
 
 .main-onboarding {
-    width: 100vw;
+    width: 100%;
 }
 
 .main-onboarding .main-onboarding--container {
@@ -125,6 +113,12 @@ nav .navbar-right .header--download-buttons-container img {
     color: var(--dark-gray);
 }
 
+
+.main-onboarding .main-onboarding--container .main-onboarding--buttons .start-button:hover{
+    background-color: var(--less-light-gray);
+    color: var(--fit-green);
+}
+
 .main-onboarding .main-onboarding--container .main-onboarding--buttons .watch-video-button{
     display: flex;
     align-items: center;
@@ -154,7 +148,7 @@ nav .navbar-right .header--download-buttons-container img {
 }
 
 .main-users {
-    width: 100vw;
+    width: 100%;
     padding: 5rem;
     background-color: var(--less-light-gray);
     background-image: url(./assets/img/icons-01-01.png);
@@ -162,7 +156,7 @@ nav .navbar-right .header--download-buttons-container img {
     background-size: 100%;
 }
 
-.main-users .main-users--container {
+.main-users .main-users--container, .main-features .main-features--container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,7 +164,8 @@ nav .navbar-right .header--download-buttons-container img {
     gap: 4rem;
 }
 
-.main-users .main-users--container h3 {
+.main-users .main-users--container h3, 
+.main-features .main-features--container h3{
     font-weight: 600;
     font-size: 2.2rem;
     text-align: center;
@@ -211,9 +206,78 @@ nav .navbar-right .header--download-buttons-container img {
     font-size: 1.1rem;
 }
 
-.main-users .main-users--container .main-users--words .words-box .icon {
+.main-users .main-users--container .main-users--words .words-box .icon,
+.main-features .main-features--container .main-features--pool .feed-and-diff .feature-box .icon {
     width: 3rem;
 }
+
+.main-features {
+    width: 100%;
+    padding: 5rem;
+}
+
+.main-features .main-features--container h3 > span {
+    color: var(--fit-green);
+}
+
+.main-features .main-features--container > p {
+    text-align: center;
+}
+
+.main-features .main-features--container .main-features--pool {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    place-items: center;
+    gap: 2rem;
+}
+
+.main-features .main-features--container .main-features--pool .feed-and-diff,
+.main-features .main-features--container .main-features--pool .trainers-and-history {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 2rem;
+}
+
+.main-features .main-features--container .main-features--pool .feed-and-diff .feature-box,
+.main-features .main-features--container .main-features--pool .trainers-and-history .feature-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:0.5rem;
+    padding: 0.5rem 1.2rem;
+    width: 19rem;
+    height: 12rem;
+    border:none;
+    background-color: var(--light-gray);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+.main-features .main-features--container .main-features--pool .feed-and-diff .feature-box:nth-child(2) p,
+.main-features .main-features--container .main-features--pool .trainers-and-history .feature-box:nth-child(2) p{
+    margin-bottom: 1.3rem;
+   
+}
+
+.main-features .main-features--container .main-features--pool .feed-and-diff .feature-box .icon, 
+.main-features .main-features--container .main-features--pool .trainers-and-history .feature-box .icon{
+    width: 2rem;
+}
+
+.main-features .main-features--container .main-features--pool .feed-and-diff .feature-box p, 
+.main-features .main-features--container .main-features--pool .trainers-and-history .feature-box p{
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.main-features .main-features--container .main-features--pool picture img {
+    width: 200px;
+    border-radius: 1.5rem;
+}
+
+
 
 @media (max-width: 1279px) {
     .navbar-right ul {
